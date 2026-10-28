@@ -1,8 +1,31 @@
 <resources>
     <string name="app_name">GrowSync</string>
+
     <string-array name="user_roles">
         <item>Student</item>
         <item>Teacher</item>
         <item>Admin</item>
     </string-array>
+
+    <string name="role_hint">Select your role</string>
+    <string name="login_button">Login</string>
+    <string name="student_portal">© GrowSync • Student Portal</string>
+    <string name="email_hint">Email or Student ID</string>
+    <string name="password_hint">Password</string>
+
+</resources><resources>
+    <string name="app_name">GrowSync</string>
+
+    <string-array name="user_roles">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string name="role_hint">Select your role</string>
+    <string name="login_button">Login</string>
+    <string name="student_portal">© GrowSync • Student Portal</string>
+    <string name="email_hint">Email or Student ID</string>
+    <string name="password_hint">Password</string>
+
 </resources>
