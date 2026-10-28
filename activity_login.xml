@@ -1,84 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F7FB"
+    android:background="#F3F8FC"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="GrowSync"
+            android:textColor="#12304A"
             android:textSize="34sp"
-            android:textStyle="bold"
-            android:textColor="#17365D"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome Back!"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#17365D"
-            android:layout_marginTop="28dp"/>
+            android:layout_marginTop="6dp"
+            android:text="LEARN • GROW • SUCCEED"
+            android:textColor="#078F91"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login to track your progress"
-            android:textSize="15sp"
-            android:textColor="#666666"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="24dp"/>
-
-        <EditText
-            android:id="@+id/etEmail"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email or Student ID"
-            android:inputType="textEmailAddress"
-            android:padding="14dp"
-            android:singleLine="true"/>
+            android:layout_marginTop="28dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="22dp">
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:padding="14dp"
-            android:layout_marginTop="12dp"
-            android:singleLine="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back!"
+                android:textColor="#12304A"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Select your role"
-            android:textStyle="bold"
-            android:textColor="#17365D"
-            android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="22dp"
+                android:text="Login to track your progress"
+                android:textColor="#718397"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
-        <Spinner
-            android:id="@+id/spRole"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:entries="@array/user_roles"
-            android:layout_marginTop="4dp"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="#F7FAFC"
+                android:hint="Email or Student ID"
+                android:inputType="text"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:singleLine="true"
+                android:textColor="#12304A"
+                android:textColorHint="#91A1B1" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_marginTop="24dp"/>
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="14dp"
+                android:background="#F7FAFC"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:singleLine="true"
+                android:textColor="#12304A"
+                android:textColorHint="#91A1B1" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Select your role"
+                android:textColor="#314A60"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spRole"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="#F7FAFC"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/user_roles"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="26dp"
+                android:backgroundTint="#078F91"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="© GrowSync Made by Team Tufan"
+                android:textColor="#91A1B1"
+                android:textSize="12sp" />
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
