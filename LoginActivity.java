@@ -1,5 +1,7 @@
+
 package com.example.growsync;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,24 +24,35 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(v -> {
             String email = etEmail.getText().toString().trim();
-            String password = etPassword.getText().toString();
-            String role = spRole.getSelectedItem().toString();
+            String password = etPassword.getText().toString().trim();
 
             if (email.isEmpty()) {
                 etEmail.setError("Email ya Student ID enter karo");
+                etEmail.requestFocus();
                 return;
             }
 
             if (password.isEmpty()) {
                 etPassword.setError("Password enter karo");
+                etPassword.requestFocus();
                 return;
             }
 
+            String role = spRole.getSelectedItem().toString();
+
             Toast.makeText(
                     LoginActivity.this,
-                    "Login form working! Role: " + role,
+                    "Welcome to GrowSync!",
                     Toast.LENGTH_SHORT
             ).show();
+
+            Intent intent = new Intent(
+                    LoginActivity.this,
+                    DashboardActivity.class
+            );
+
+            intent.putExtra("USER_ROLE", role);
+            startActivity(intent);
         });
     }
 }
